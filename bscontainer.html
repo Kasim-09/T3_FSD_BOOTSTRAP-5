@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bs2</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- Task 1 :-Create a div on top of this page with blue bg-color with no margin padding of 8px
+     , text in light grey color in uppercase, font size of 24px it must be max bold, italic, in center
+     and underline. inside div Container demo text  -->
+    <div class="bg-primary mt-0 p-2 text-muted text-uppercase container fs-2 fw-bolder fst-italic text-decoration-underline text-center ">Container Demo</div>
+    <!-- Container classes  -->
+    <div class="bg-danger text-white container-fluid mt-3" >Container full</div>
+    <div class="bg-success text-white container mt-3" >Container fixed</div>
+    <div class="bg-warning text-white mt-3 container-lg">Large Container</div>
+    <!--Problem-1:- Create a div which has top margin of 24px with black bg color and it must remain of full width 
+     until 767px then it must be fixed width-->
+     <br>
+     <br>
+     <div class="mt-4 bg-black container-md text-white">Problem-1</div>
+     <br>
+     <br>
+     <!-- Typography Classes 
+      1. text-muted (grey) 
+      2. text-uppercase
+      3. text-lowercase
+      4. text-capatalize
+      5. text-start
+      6. text-center
+      7. text-end
+      8. fs-1 to fs-6 (font-size and exactly same as h1 to h6)
+      9. fw-bold, fw-bolder, fw-light, fw-lighter
+      10. fst-italic, fst-normal (font-style)
+      11. text-decoration-none
+      12. text-decoration-underline
+      13. text-decoration-line-through -->
+
+      <!-- ------------------------------------------------------ -->
+
+      <!-- position:-
+       1. position-static
+       2. position-absolute
+       3. position-relative
+       4. position-fixed
+       5. position-sticky
+       bottom/start/end/top-0 or top-50 or top-100
+----------------------------------------------------------------------------------------------------------
+       task-2 :- Create a box of height width 400px orange in color. this must appear at bottom-right of the screen create three more boxes inside position is given as below 
+       box is 40*40 and in red color 
+        -->
+       <div class="container bg-warning  position-absolute bottom-0 end-0" style="height:400px; width:400px;">
+            <div class="bg-danger position-absolute top-0 end-0" style="height:40px; width:40px"></div>
+            <div class="bg-danger position-absolute bottom-0 start-0" style="height:40px; width:40px"></div>
+            <div class="bg-danger position-absolute top-50 start-50" style="height:40px; width:40px"></div>
+       </div>
+
+<!-- -------------------------------------------------------------------------------------------------------- -->
+ 
+      
+</body>
+</html>
+
+<!-- The screen having width <576 is called as XS -->
+<!-- The screen having width >=576 is called as S -->
+<!-- The screen having width >=768 is called as md -->
+<!-- The screen having width >=992 is called as lg -->
+<!-- The screen having width >=1200 is called as Xl -->
+<!-- The screen having width >=1400 is called as XXl -->
+
+ <!-- http://getbootstrap.com/docs/5.3/layout/containers/ -->
+
+ <!-- hw-explore bootstrap website -->
