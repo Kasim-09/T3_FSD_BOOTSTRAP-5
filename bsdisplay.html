@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bs3</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
 </head>
+
 <body>
     <!-- display classes 
      1. d-none
@@ -21,15 +26,49 @@
      7 d-grid
      d-sm-none 
      d-md-block -->
-     <div class="bg-secondary w-50 mt-2 d-sm-none d-xl-block">hello</div>
+    <div class="bg-secondary w-50 mt-2 d-sm-none d-xl-block">hello</div>
 
     <!-- Shadow:- 
      shadow median / shadom-lg shadow-sm-->
-<br><br><br>
-    <div class="container w-25 m-3 border border-danger border-3 shadom-lg rounded-3">
-        <div class=" rounder-circle bg-secondary m-3 d-inline-block" style="height:50px; width:50px;"></div>
-        <h1 class="text-dark d-inline-block">My photo</h1>
+    <br><br><br>
+    <div class="container m-3 border border-danger border-3 shadom-lg rounded-3 posi">
+        <div class=" rounded-circle bg-secondary m-3 d-inline-block" style="height:50px; width:50px;"></div>
+        <h1 class="text-dark d-inline-block top-0">My photo</h1>
     </div>
-    
+    <hr>
+
+    <div class="bg-info d-flex justify-content-center p-3 justify-content-around align-items-center flex-row-reverse "
+        style="height: 200px; width: 400px;">
+        <div class="bg-danger">hello-1</div>
+        <div class="bg-danger">hello-2</div>
+        <div class="bg-danger">hello-3</div>
+    </div>
+    <br>
+    <hr>
+    <div class="container">
+        <img src="size of containers.png" class="rounded-circle">
+    </div>
 </body>
+
 </html>
+
+<!-- Justify classes 
+ 1. justify-content-start
+ 2. justify-content-end
+ 3. justify-content-center
+ 4. justify-content-around
+ 5. justify-content-evenly
+ 6. justify-content-between
+ 7. align-items-start
+ 8. align-items-center
+ 9. align-items-end
+ 10. flex-row
+ 11. flex-column
+ 12. flex-row-reverse
+ 13 flex-column-reverse -->
+
+ <!-- img classes 
+  1. img-fluid (responsive image)
+  2. img-thumbnail (rounded border with padding and grey color outside the image)
+  3. rounded 
+  4. rounded-circle -->
