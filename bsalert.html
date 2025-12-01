@@ -1,20 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bs-6</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="container">
-        <div class="alert alert-success alert-dismissible fade show">Some Important message! <button class="btn-close" data-ds-dismiss=""></button></div>
-            
+        <div class="alert alert-success alert-dismissible fade show">Some Important message! <button class="btn-close"
+                data-bs-dismiss="alert"></button></div>
+    </div>
+    <div class="container mt-3">
+        <button class="btn  btn-primary">Click me</button>
+        <a class="btn btn-danger btn-lg" href="#">Click me</a>
+        <input class="btn btn-info btn-sm" type="button" Value="Click me">
+    </div>
+    <div class="container-fluid mt-3">
+        <button class="btn bg-success w-100">Click me !!!</button>
+    </div>
+    <!-- Spinner classes ----= -->
+    <div class="container mt-3">
+        <div class="spinner-border text-danger spinner-border-sm"></div>
+        <div class="text-primary d-inline-block">loading</div>
+        <div class="spinner-grow text-success"></div>
+    </div>
+    <div class="container mt-3">
+        <button class="btn bg-warning">
+            <div class="spinner-border text-success spinner-border-sm"></div>
+            <div class="text-primary d-inline-block">loading</div>
+        </button>
+    </div>
+    <hr>
+    <div class="container mt-3">
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Syllabus</button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">FSD-1</a></li>
+                <li><a class="dropdown-item" href="#">Python-1</a></li>
+                <li><a class="dropdown-item" href="#">PS</a></li>
+                <li><a class="dropdown-item" href="#">DE</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="container mt-3">
+        <button class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown">Syllabus</button>
+        <div class="dropdown-menu">
+            <div class="dropdown-header fw-bold">Sem-3</div>
+            <div><a class="dropdown-item text-danger" href="#">FSD-1</a></div>
+            <div><a class="dropdown-item text-primary" href="#">Python-1</a></div>
+            <div><a class="dropdown-item text-success" href="#">PS</a></div>
+            <div><a class="dropdown-item text-secondary" href="#">DE</a></div>
+            <div class="dropdown-divider"></div>
+            <div class="dropdown-header fw-bolder">Sem-4</div>
+            <div><a class="dropdown-item text-primary" href="#">FSD-2</a></div>
+            <div><a class="dropdown-item text-success" href="#">Python-2</a></div>
+        </div>
     </div>
 </body>
+
 </html>
+
+
+
 <!-- Alert classes
  1. alert
  2. alert-* -->
+<!-- Button classes 
+   1. By defult size of button is Medium
+   2. .btn
+   3. .btn-*
+   4. btn-sm
+   5. btn-lg -->
+<!-- for full width use w-100 -->
+<!-- ==> Spinner class 
+     Type-1:- Border spinner
+     Type-2:- grow spinner
+     for giving color :- text-* (Contexual classes)-->
+
+<!-- Dropdown Classes 
+     .dropdown
+     .dropdown-menu
+     .dropdown-item
+     .dropdown-link
+     .dropdown.toggle(To put down arror) 
+     .dropdwon-divider
+     .dropdown-header-->
