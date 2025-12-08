@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bs-15(NEW CHAPTER-7)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="container mt-3 bg-light rounded">
+        <form action="bsalert.html" method="get">
+            <!-- <fieldset> -->
+            <legend>Personal Info</legend>
+            <label for="fn" class="form-label">First Name:</label>
+            <input type="text" id="fn" class="form-control form-control-lg">
+            <label for="ln" class="form-label">Last Name:</label>
+            <input type="text " id="ln" class="form-control form-control-plaintext" placeholder="enter lastname">
+            <div class="row mt-3">
+                <div class="col-1"><label for="un" class="form-label">Username:</label></div>
+                <div class="col-11"><input type="text" id="un" class="form-control"></div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-1"><label for="pass" class="form-label">Password:</label></div>
+                <div class="col-5"><input type="pass" id="pw" class="form-control" disabled></div>
+                <div class="col-2 text-end"><label for="cw" class="form-label">Confirm Password:</label></div>
+                <div class="col-4"><input type="pass" id="cw" class="form-control"></div>
+            </div>
+            <!-- Checkbox-->
+            <label class="form-label mt-3">Hobbies:</label>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input">
+                <label for="">Swimming</label>
+            </div>
+            <div>
+                <input type="checkbox" class="form-check-input">
+                <label for="">Eating</label>
+            </div>
+            <div>
+                <input type="checkbox" class="form-check-input">
+                <label for="">Sleeping</label>
+            </div>
+            <div>
+                <input type="checkbox" class="form-check-input">
+                <label for="">Nothing</label>
+            </div>
+            <!-- Radio Buttons -->
+            <label class="form-label mt-3">Gender:</label>
+            <div class="form-check-inline">
+                <input type="radio" class="form-check-input" name="g">
+                <label for="">Male</label>
+            </div>
+            <div class="form-check-inline">
+                <input type="radio" class="form-check-input" name="g">
+                <label for="">Female</label>
+            </div>
+            <div class="form-check-inline">
+                <input type="radio" class="form-check-input" name="g">
+                <label for="">other</label>
+            </div>
+            <!-- <div> -->
+            <label class="form-label mt-3 d-block">Fav Subjects:</label>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input">
+                <label for="">FSD</label>
+            </div>
+            <div>
+                <input type="checkbox" class="form-check-input">
+                <label for="">Python</label>
+            </div>
+            <div>
+                <input type="checkbox" class="form-check-input">
+                <label for="">PS</label>
+            </div>
+            <div>
+                <input type="checkbox" class="form-check-input">
+                <label for="">DE</label>
+            </div>
+            <!-- <div> -->
+
+            <div class="form-check form-switch">
+                <input type="checkbox" name="" id="ag" class="form-check-input">
+                <label for="" class = "form-check-label" for="ag">
+                    Agree to terms
+                </label>
+            </div>
+
+            <!-- select -->
+             <label for="" class="form-label mt-3">City</label>
+             <select name="" id="" class="form-select form-select-sm">
+                <option value="" hidden selected disabled>---Select City---</option>
+                <option value="">Ahemadabad</option>
+                <option value="">Surat</option>
+                <option value="">Himmatnagar</option>
+             </select>
+            <!-- Range -->
+             <label for="" class="form-label mt-3">Price Range</label>
+              <div class="row">
+                <div class="col">100</div>
+                <div class="col">200</div>
+                <div class="col">300</div>
+                <div class="col">400</div>
+                <div class="col text-end">500</div>
+              </div>
+              <input type="range" class="form-range">
+            <!-- color -->
+             <label for="" class="form-label mt-3">fav-color</label>
+             <input type="color" class="form-control-color" value="#56ff78">
+             <!-- upload photo -->
+              <br>
+              <label for="" class="form-label mt-3">Upload Photo</label>
+              <input type="file" class="form-control-file">
+              <!-- comments  -->
+               <br>
+               <label for="" class="form-label mt-3">Comments-</label>
+               <textarea name="" id="" class="form-control" placeholder="Enter comments" rows="7">Enter Comments </textarea>
+               <!-- ------------- -->
+            <label for="" class="form-label">Email</label>
+            <div class="input-group">
+                <input type="text" class="form-control">
+                <span class="input-group-text">@gmail.com</span>
+            </div>
+            <br>
+            <br>
+            <br>
+            
+        </form>
+    </div>
+</body>
+
+</html>
+
+<!-- .form-label 
+        .form-control-sm
+        .form-control-lg
+        .form-control
+        .form-control-plaintext
+        .form-check
+        .form-check-input
+        .form-check-label
+        form-check-inline
+        .form-select
+        .form-select-lg
+        .form-select-sm
+        form-range
+        .form-control-file
+        .form-control-color-->
+
+
+<!-- disabled
+readonly -->
+
+<!-- form-check-inline -->
+<!-- or 
+  d-inline-block -->
