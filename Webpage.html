@@ -14,7 +14,7 @@
 </head>
 
 <body style="padding-top: 30px;">
-    <nav class="navbar bg-primary  navbar-dark navbar-expand-md fixed-top">
+    <nav class="navbar bg-primary  navbar-dark navbar-expand-md fixed-top" id="navs">
         <div class="container-fluid">
             <a href="#" class="navbar-brand ms-4">
                 My Coaching
@@ -38,33 +38,124 @@
             </div>
         </div>
         <div class="collapse navbar-collapse me-5">
-            <button class="btn btn-light ">Login</button>
-            <button class="btn btn-dark ms-3 ">Register</button>
+            <button class="btn btn-light " data-bs-toggle="modal" data-bs-target="#m1">Login</button>
+            <button class="btn btn-dark ms-3 " data-bs-toggle="offcanvas" data-bs-target="#off">Student</button>
         </div>
     </nav>
-    <div class="container-fluid mt-3 gx-0" height="500px">
+    <div class="container-fluid mt-3 gx-0" height="500px" data-bs-spy="scroll" data-bs-target="#navs">
         <div class="carousel slide" data-bs-ride="carousel" id="car">
             <div class="carousel-indicators">
                 <button data-bs-slide-to="0" data-bs-target="#car" class="active"></button>
-                <button data-bs-slide-to="1" data-bs-target="#car"  ></button>
-                <button data-bs-slide-to="2" data-bs-target="#car" ></button>
+                <button data-bs-slide-to="1" data-bs-target="#car"></button>
+                <button data-bs-slide-to="2" data-bs-target="#car"></button>
             </div>
-            <div class="carousel-inner" >
-                <div class="carousel-item active bg-dark" style="height: 150px;"><h3 class="text-white text-center mt-4">Best Classroom Training</h3><p class="text-white text-center">Learn from expert teachers</p></div>
-                <div class="carousel-item active bg-dark" style="height: 150px;"><h3 class="text-white text-center mt-4">Best Classroom Training</h3><p class="text-white text-center">111Learn from expert teachers</p></div>
-                <div class="carousel-item active bg-dark" style="height: 150px;"><h3 class="text-white text-center mt-4">Best Classroom Training</h3><p class="text-white text-center">222Learn from expert teachers</p></div>
-                <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#car"><span class="carousel-control-prev-icon"></span></button>
-            <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#car"><span class="carousel-control-next-icon"></span></button>
+            <div class="carousel-inner">
+                <div class="carousel-item active bg-dark" style="height: 150px;">
+                    <h3 class="text-white text-center mt-4">Best Classroom Training</h3>
+                    <p class="text-white text-center">Learn from expert teachers</p>
+                </div>
+                <div class="carousel-item active bg-dark" style="height: 150px;">
+                    <h3 class="text-white text-center mt-4">Best Classroom Training</h3>
+                    <p class="text-white text-center">111Learn from expert teachers</p>
+                </div>
+                <div class="carousel-item active bg-dark" style="height: 150px;">
+                    <h3 class="text-white text-center mt-4">Best Classroom Training</h3>
+                    <p class="text-white text-center">222Learn from expert teachers</p>
+                </div>
+                <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#car"><span
+                        class="carousel-control-prev-icon"></span></button>
+                <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#car"><span
+                        class="carousel-control-next-icon"></span></button>
             </div>
         </div>
     </div>
-    <div class="container-fluid bg-light gx-0 p-3" style="height:300px;" id="home">
-        <h1 class="text-center mt-5">Welcome To Our Coaching</h1>
-        <p class="text-center mt-3">We Provide Quality Education For Your Success</p>
+    <div class="modal" id="m1">
+        <div class="modal-dialog modal-md modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">
+                        Student Login
+                    </h1>
+                    <button class="btn-close " data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="email" placeholder="Email" class="w-100"><br>
+                    <input type="password" placeholder="Password" class="mt-3 w-100">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#m2">Login</button>
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
-     <div class="container-fluid bg-warning gx-0 p-3" style="height:300px;" id="about">
-        <h1 class="text-center mt-5">About Us</h1>
-        <p class="text-center mt-3">We have 10+ experience teachers</p>
+    <div class="offcanvas offcanvas-end" id="off">
+        <div class="offcanvas-header" class="mt-5">
+            <h1>Student Details</h1>
+            <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body text-center">
+            <img src="emoji.jfif" alt="" style="height:90px;"><br>
+            <a href="#">Profile</a><br>
+            <a href="#">My Courses</a><br>
+            <a href="#">Fees</a><br>
+            <a href="#" class="text-danger">Logout</a>
+        </div>
+        <div class="offcanvas-footer">
+
+        </div>
+    </div>
+    <div data-bs-spy="scroll" data-bs-target="#navs">
+        <div class="container-fluid bg-light gx-0 p-3" style="height:300px;" id="home">
+            <h1 class="text-center mt-5">Welcome To Our Coaching</h1>
+            <p class="text-center mt-3">We Provide Quality Education For Your Success</p>
+        </div>
+        <div class="container-fluid bg-warning gx-0 p-3" style="height:300px;" id="about">
+            <h1 class="text-center mt-5">About Us</h1>
+            <p class="text-center mt-3">We have 10+ experience teachers</p>
+        </div>
+        <div class="container-fluid bg-white gx-0 p-3" style="height:300px;" id="cource">
+            <h1 class="text-center">Our Cources</h1>
+            <div class="accordion mt-5" id="acc">
+                <div>
+                    <div class="collapse show accordion-collapse" id="n1" data-bs-parent="#acc">
+                        <div>
+                            <div class="row">
+                                <div class="col-3"><button class="btn btn-outline-dark w-100 ">Web Design</button></div>
+                                <div class="col-3"><button class="btn btn-outline-dark  w-100">PHP</button></div>
+                                <div class="col-3"><button class="btn btn-outline-dark w-100">Python</button></div>
+                                <div class="col-3"><button class="btn btn-outline-dark w-100">JAVA</button></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="collapse accordion-collapse" id="n2" data-bs-parent="#acc">
+                        <div>
+                            <div class="row">
+                                <div class="col-3"><button class="btn btn-outline-dark w-100">C++</button></div>
+                                <div class="col-3"><button class="btn btn-outline-dark w-100">Android</button></div>
+                                <div class="col-3"><button class="btn btn-outline-dark w-100">React</button></div>
+                                <div class="col-3"><button class="btn btn-outline-dark w-100">Node</button></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="pagination justify-content-center mt-5">
+                <li class="page-item"><a href="#n1" data-bs-toggle="collapse" class="page-link ">prev</a></li>
+                <li class="page-item"><a href="#n1" data-bs-toggle="collapse" class="page-link active">1</a></li>
+                <li class="page-item"><a href="#n2" data-bs-toggle="collapse" class="page-link">2</a></li>
+                <li class="page-item"><a href="#n2" data-bs-toggle="collapse" class="page-link">next</a></li>
+            </ul>
+        </div>
+        <div class="container-fluid bg-success gx-0 p-3" style="height:300px;" id="contact">
+            <h1 class="text-center mt-5">Contact Us</h1>
+            <p class="text-center mt-3">Email: vijapurakasimhussain@gmail.com</p>
+            <p class="text-center mt-3">Contact: 97233xx315</p>
+        </div>
     </div>
 </body>
 
